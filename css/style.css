@@ -4,69 +4,90 @@
     font-family: Arial;
 }
 
+body{
+    height: 100vh;
+}
+
 .arriba1{
-    background-color: #1CD1B0;
-    height: 38px;
+    background-color: #D1891C;
+    font-size: 80%;
     padding: 8px;
 }
 .arriba2{
     background-color: #00669F;
-    height: 101px;
-    padding: 8px;
+    color: white;
+    font-size: 80%;
+    padding: 10px;
     
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .caja{
     display: inline-block;
     position: relative;
-    margin: 100px 30px 100px 30px;
-    background-color: #F3F3F3;
-
-    width: 300px;
-    height: 450px;
+    margin: 30px;
+    background-color: #e2e8eb;
+    width: 250px;
+    height: 420px;
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .corazon{
     position: absolute;
+    width: 10%;
     top: 10px;
     left: 10px;
 }
 
-.zonaImagen1{
-    background-image: url(../img/fondo_batman.png);
-    background-size: cover;
-    height: 100px;
+.zonaImagen{
+    border-radius: 20%;
+    height: 100px
 }
 
-.zonaImagen2{
-    background-image: url(../img/fondo_harley.png);
-    background-size: cover;
-    height: 100px;
-}
 
 .miniatura{
     position: relative;
-    border-radius: 60px;
-    bottom: 20px;
+    border-radius: 100%;
+    width: 100px;
+
 }
 .zonaTexto{
+
+    font-size: 10px;
     padding: 0px 20px 20px 20px;
+}
+h3{
+    font-size: 150%;
+    padding: 5%;
 }
 
 .boton{
     display: inline-block;
     color: white;
     padding: 15px;
-    width: 120px;
-    height: 50px;
+    width: 50%;
     background-color: #00669F;
 }
 
 footer{
     color: white;
     background-color: #00669F;
+    text-align: center;
     height: 51px;
     padding: 10px;
+}
+
+@media (min-width: 480px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
