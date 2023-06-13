@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: Arial;
+}
+
+body{
+    height: 100vh;
+}
+
+.arriba1{
+    background-color: cyan;
+    font-size: 80%;
+    padding: 8px;
+}
+.arriba2{
+    background-color: #00669F;
+    color: white;
+    font-size: 80%;
+    padding: 10px;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    background-color: #00669F;
+}
+
+.primero{
+    display: flex;
+    border: #00669F;
+}
+
+
+footer{
+    color: white;
+    background-color: #00669F;
+    text-align: center;
+    height: 51px;
+    padding: 10px;
+}
+
+@media (min-width: 480px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
