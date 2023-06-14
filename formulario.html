@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="css/style_añadir.css">
 </head>
+
 <body>
     <header>
         <section class="arriba1">
@@ -19,60 +21,86 @@
     </header>
     <main>
         <section class="formulario">
+            
+            <form action="">
             <h1>Añadí tu super!</h1>
-        <p>Agregá tu personaje favorito completando las opciones.</p>
-       <form action="" >
-            <fieldset class="primero">
-                <div>
-                    <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="especie">Especie</label>
-                </div>
-                <div>
-                    <select name="especie" id="especie">
-                        <option value="" disabled selected hidden> Especie</option>
-                        <option value="Kr">Kriptoniano</option>
-                        <option value="Mu">Murcielago</option>
-                </div>
-                </select>
-            </fieldset>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
 
-            <fieldset>
-                <label for="fecha">Fecha</label>
-                <input type="date" name="fecha" id="fecha">
-                <label for="archivo">Agregar foto</label>
-                <input type="file" name="archivo" id="archivo">
-            </fieldset>
-            <fieldset>
+            <div class="datos">
+                <fieldset class="zona">
 
-                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
-                
-                <div>
-                    <div>
+                    <div class="elemento">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="elemento">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+
+                    <div class="elemento">
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                        placeholder="Descripcion"></textarea>
+                    </div>
+
+                </fieldset>
+                <fieldset class="zona">
+                    
+                    <div class="elemento">
+                        <label for="especie">Especie</label>
+                        <select name="especie" id="especie">
+                            <option value="" disabled selected hidden> Especie</option>
+                            <option value="Kr">Kriptoniano</option>
+                            <option value="Mu">Murcielago</option>
+                        </select>
+                    </div>
+                    
+                    <div class="elemento">
+                        <label for="archivo">Agregar foto</label>
+                        <input type="file" name="archivo" id="archivo">
+                    </div>
+
+                    <div class="elemento">
                         <label for="">Poderes</label>
-    
-                    <input type="checkbox" name="op" id="o1">
-                    <label for="o1">Volar</label>
-                    <input type="checkbox" name="op" id="o2">
-                    <label for="o2">Superinteligencia</label>
-                    <input type="checkbox" name="op" id="o3">
-                    <label for="o3">Vista de rayo laser</label>
-                    <input type="checkbox" name="op" id="o4">
-                    <label for="o4">Billetera gorda</label>
+                        <div>
+                            <input type="checkbox" name="op" id="o1">
+                            <label for="o1">Volar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="op" id="o2">
+                            <label for="o2">Superinteligencia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="op" id="o3">
+                            <label for="o3">Vista de rayo laser</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="op" id="o4">
+                            <label for="o4">Billetera gorda</label>
+                        </div>
+
+                        
                     </div>
-    
-                    <div>
+                    <hr>
+                    <div class="elemento">
                         <label for="">Tipo de personaje</label>
-    
-                    <input type="radio">
-                    <label for="">Heroe o Heroina</label>
-                    <input type="radio">
-                    <label for="">Villano o villana</label>
+                        <div>
+                            <input type="radio">
+                        <label for="">Heroe o Heroina</label>
+                        </div>
+                        <div>
+                            <input type="radio">
+                            <label for="">Villano o villana</label>
+                        </div>
+
                     </div>
-                </div>
-            </fieldset>
-            <input type="submit" value="Añadir">
-       </form>
+
+                </fieldset>
+            </div>
+
+                <input type="submit" value="Añadir" >
+            </form>
         </section>
 
     </main>
@@ -81,4 +109,5 @@
     </footer>
 
 </body>
+
 </html>
